@@ -1,0 +1,98 @@
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  margin: 400px auto;
+}
+
+.container .icon {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2), -1px 0 2px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.container .icon .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+  transition: all .3s ease-in-out;
+}
+
+.container .icon:hover .fab {
+  transform: translate(-50%, -50%) scale(1.4) rotateY(360deg);
+  color: #fff;
+}
+
+.facebook {
+  color: #3b5999;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.instagram {
+  color: #e4405f;
+}
+
+.line {
+  color: #00c300;
+}
+
+.skype {
+  color: #00AFF0;
+}
+
+.facebook:before,
+.twitter:before,
+.instagram:before,
+.line:before,
+.skype:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all .5s ease-in-out;
+}
+
+.facebook:hover:before,
+.twitter:hover:before,
+.instagram:hover:before,
+.line:hover:before,
+.skype:hover:before {
+  left: 0;
+}
+
+.facebook:hover:before {
+  background: #3b5999;
+}
+
+.twitter:hover:before {
+  background: #55acee;
+}
+
+.instagram:hover:before {
+  background: #e4405f;
+}
+
+.line:hover:before {
+  background: #00c300;
+}
+
+.skype:hover:before {
+  background: #00AFF0;
+}
